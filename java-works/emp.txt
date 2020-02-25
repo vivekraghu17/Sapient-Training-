@@ -1,0 +1,8 @@
+empid: 123
+EmpName: man
+EmpSal3000.0empid: 123
+EmpName: vivek
+EmpSal4000.0
+
+
+Hi how are you
