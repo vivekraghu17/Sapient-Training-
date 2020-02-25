@@ -1,0 +1,12 @@
+package com.example.springbootgroup.repo;
+
+import com.example.springbootgroup.beans.Group;
+
+public class GroupRepository {
+
+	public Group insert(Group group) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

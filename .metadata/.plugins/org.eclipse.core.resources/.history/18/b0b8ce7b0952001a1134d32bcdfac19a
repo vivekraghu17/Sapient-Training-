@@ -1,0 +1,5 @@
+server.port=9190
+spring.application.name=group-management
+
+emp-management.ribbon.listOfService=http://localhost:9090,http://localhost:8001
+

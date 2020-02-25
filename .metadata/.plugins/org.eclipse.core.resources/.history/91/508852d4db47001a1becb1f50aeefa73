@@ -1,0 +1,68 @@
+package com.vivr.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.vivr.beans.Employee;
+import com.vivr.connection.GetConnection;
+import com.vivr.interfaces.IEmployeeDAO;
+
+public class EmployeeDAO implements IEmployeeDAO {
+	@Override
+	public boolean insertEmployee(Employee employee) {
+		String sql = "insert into emp values (?,?,?,?,?)";
+		
+		GetConnection gc = new GetConnection();
+		try {
+			gc.ps = GetConnection.getPostGresConnection().prepareStatement(sql);
+			gc.ps.setInt(1, employee.getEmpId());
+			gc.ps.setString(2,  employee.getEmpName());
+			gc.ps.setDouble(3, employee.getEmpSal());
+			gc.ps.setString(4, employee.getEmpEmail());
+			gc.ps.setInt(5, employee.getDeptId());
+			
+			return gc.ps.executeUpdate() > 0;
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return false;
+	}
+	
+
+		
+
+	@Override
+	public boolean updateEmployeeSalary(int empId, double empSal) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Employee getemployee(int empId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> getAllEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+
+	@Override
+	public boolean deleteEmployee(int empId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+	
+	
+}

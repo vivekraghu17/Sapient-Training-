@@ -1,0 +1,11 @@
+package com.example.springbootgroup.beans;
+
+public class Group {
+	private Integer id;
+	private String name;
+	private int createdById;
+	private List<Integer> members;
+	private List<Integer> expenditures;
+	private List<Integer> transactions;
+}
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="eureka-naming-netflix-server"/>
+<aop-project name="spring-boot-group"/>
+<aop-project name="spring-boot-works"/>
+<aop-project name="spring-boot-works-01"/>
+<aop-project name="netflix-zuul-api-gateway"/>
+</aop-reference-model>

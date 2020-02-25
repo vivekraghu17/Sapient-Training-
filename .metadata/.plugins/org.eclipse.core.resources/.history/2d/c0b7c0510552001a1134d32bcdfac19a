@@ -1,0 +1,13 @@
+package com.example.eureka.eurekanamingnetflixserver;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class EurekaNamingNetflixServerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EurekaNamingNetflixServerApplication.class, args);
+	}
+
+}
