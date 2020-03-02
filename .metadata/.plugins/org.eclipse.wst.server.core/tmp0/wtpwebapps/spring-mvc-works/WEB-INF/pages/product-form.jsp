@@ -1,7 +1,9 @@
-<%@ include file="./header.jspf" %>
+<%@ include file="./header.jspf"%>
 
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf" %>
-<h2><b>Add Product</b> form</h2>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf"%>
+<h2>
+	<b>Add Product</b> form
+</h2>
 <hr />
 
 <div class="col">
@@ -10,24 +12,35 @@
 			<label class="col-md-4" for="productId">Product ID</label>
 			<div class="col-md-8">
 				<sf:input path="productId" cssClass="form-control" />
+				<sf:errors path="productId" cssClass="text-danger" />
+
 			</div>
 		</div>
 		<div class="form-group row">
 			<label class="col-md-4" for="productName">Product Name</label>
 			<div class="col-md-8">
 				<sf:input path="productName" cssClass="form-control" />
+				<sf:errors path="productName" cssClass="text-danger" />
+
 			</div>
 		</div>
 		<div class="form-group row">
 			<label class="col-md-4" for="productPrice">Product Price</label>
 			<div class="col-md-8">
 				<sf:input path="productPrice" cssClass="form-control" />
+				<sf:errors path="productPrice" cssClass="text-danger" />
+
 			</div>
 		</div>
 		<div class="form-group row">
 			<label class="col-md-4" for="categoryName">Category Name</label>
 			<div class="col-md-8">
-				<sf:input path="categoryName" cssClass="form-control" />
+				<sf:select path="categoryName" cssClass="form-control custom-select">
+					<sf:option value="-1">--Select--</sf:option>
+					<sf:options items="${CATEGORIES}" />
+					<sf:errors path="categoryName" cssClass="text-danger" />
+
+				</sf:select>
 			</div>
 		</div>
 		<div class="form-group row">
@@ -40,4 +53,5 @@
 
 
 
-<%@ include file="./footer.jspf" %>
+
+	<%@ include file="./footer.jspf"%>

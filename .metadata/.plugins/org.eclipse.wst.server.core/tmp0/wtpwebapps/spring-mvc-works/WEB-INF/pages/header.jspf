@@ -19,4 +19,6 @@
 			<a href="./all-products" class="btn btn-link">List All Products</a>
 			<a href="./add-product" class="btn btn-link">Add Product</a>
 			<a href="./product-details" class="btn btn-link">Product Detail</a>
+			<a href="./price-form" class="btn btn-link">Search Product by price range</a>
+			
 		</p>

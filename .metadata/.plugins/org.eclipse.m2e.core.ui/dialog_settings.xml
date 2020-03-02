@@ -6,6 +6,12 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\vivr\Downloads\product\product"/>
+			<item value="C:\Users\vivr\Downloads\Microservice_Customer"/>
+			<item value="C:\Users\vivr\Downloads\customerorder"/>
+			<item value="C:\Users\vivr\Downloads\customer"/>
+			<item value="C:\Users\vivr\Downloads\product"/>
+			<item value="C:\Users\vivr\Downloads\assessment"/>
 			<item value="C:\Users\vivr\Downloads\spring-mvc-works"/>
 			<item value="C:\Users\vivr\Downloads\spring-boot-group\spring-boot-group"/>
 			<item value="C:\Users\vivr\eclipse-workspace\spring-boot-works"/>
@@ -15,9 +21,6 @@
 			<item value="C:\Users\vivr\Downloads\spring-boot\spring-boot-group"/>
 			<item value="C:\Users\vivr\Downloads\spring-boot\spring-boot-works"/>
 			<item value="C:\Users\vivr\eclipse-workspace\vivr"/>
-			<item value="C:\Users\vivr\Downloads\spring-boot-works\spring-boot-works"/>
-			<item value="C:\Users\vivr\eclipse-workspace\java-works"/>
-			<item value="C:\Users\vivr\Desktop\CustomerAppHibernate"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
